@@ -9,7 +9,7 @@
 import UIKit
 
 class DashboardViewController: UIViewController {
-
+    
     
     @IBOutlet weak var dashboardTableView: UITableView!
     @IBOutlet weak var bgImage: UIImageView!
@@ -31,7 +31,7 @@ class DashboardViewController: UIViewController {
             bgImage.isHidden = true
             dashboardTableView.isHidden = false
         }
-     
+        
     }
     
     
@@ -53,7 +53,7 @@ class DashboardViewController: UIViewController {
         dashboardTableView.delegate = self
         
         dashboardTableView.register(UINib(nibName: "DashboardTableViewCell", bundle: nil), forCellReuseIdentifier: "DashboardCell")
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -64,27 +64,28 @@ class DashboardViewController: UIViewController {
         return formater.string(from: input)
     }
     
-//    Psst, Tomorrow's the deadline!
-//    Let's do your best to finish it on time!
+    //    Psst, Tomorrow's the deadline!
+    //    Let's do your best to finish it on time!
     
     func colorCell(color: String, cell: DashboardTableViewCell){
-            switch color {
-            case "purple":
-                cell.dashboardTaskView.layer.backgroundColor = UIColor(red: 0.722, green: 0.69, blue: 0.996, alpha: 1).cgColor
-            case "green":
-                cell.dashboardTaskView.layer.backgroundColor = UIColor(red: 0.596, green: 0.816, blue: 0.369, alpha: 1).cgColor
-            case "blue":
-                cell.dashboardTaskView.layer.backgroundColor = UIColor(red: 0.486, green: 0.784, blue: 1, alpha: 1).cgColor
-            case "orange":
-                cell.dashboardTaskView.layer.backgroundColor = UIColor(red: 0.992, green: 0.753, blue: 0.333, alpha: 1).cgColor
-            default:
-                cell.dashboardTaskView.layer.backgroundColor = UIColor(red: 0.722, green: 0.69, blue: 0.996, alpha: 1).cgColor
-            }
+        switch color {
+        case "purple":
+            cell.dashboardTaskView.layer.backgroundColor = UIColor(red: 0.722, green: 0.69, blue: 0.996, alpha: 1).cgColor
+        case "green":
+            cell.dashboardTaskView.layer.backgroundColor = UIColor(red: 0.596, green: 0.816, blue: 0.369, alpha: 1).cgColor
+        case "blue":
+            cell.dashboardTaskView.layer.backgroundColor = UIColor(red: 0.486, green: 0.784, blue: 1, alpha: 1).cgColor
+        case "orange":
+            cell.dashboardTaskView.layer.backgroundColor = UIColor(red: 0.992, green: 0.753, blue: 0.333, alpha: 1).cgColor
+        default:
+            cell.dashboardTaskView.layer.backgroundColor = UIColor(red: 0.722, green: 0.69, blue: 0.996, alpha: 1).cgColor
         }
-
+    }
+    
 }
 
 extension DashboardViewController: UITableViewDataSource{
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -96,9 +97,9 @@ extension DashboardViewController: UITableViewDataSource{
             return milestone.count
         }
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "DashboardCell", for: indexPath) as! DashboardTableViewCell
         
         currentTask = Task.fetchTask(viewContext: getViewContext(), selectedMilestone: milestone[indexPath.row].milestoneId!)
@@ -115,32 +116,27 @@ extension DashboardViewController: UITableViewDataSource{
         cell.deadlineLabel?.text = formatDate(input: milestone[indexPath.row].deadline!)
         cell.projectNameLabel?.text = printedProject[0].projectName
         cell.clientNameLabel?.text = printedProject[0].clientName
-
+        
         var taskCount = currentTask.count
         if currentTask.count > 3 {
             taskCount = 3
         }
-        var text:String = ""
+        
+        cell.task = currentTask
         
         if taskCount > 0 {
-            for index in 0..<taskCount {
-                text += "-   " + currentTask[index].taskName! + "\n"
-                if currentTask[index].isChecklist == true {
-                    cell.label.attributedText = text.strikeThrough()
-                    cell.label.textColor = UIColor(white: 1, alpha: 0.7)
-                } else {
-                    cell.label.attributedText = text.unstrikeThrough()
-                    cell.label.text = text
-                }
-            }
+
         }else{
-            cell.label.isHidden = true
+            
+            cell.taskTableViewCell.isHidden = true
         }
-          
+        
+        cell.color = milestone[indexPath.row].color
+        cell.colorTable(color: milestone[indexPath.row].color ?? "purple", cell: cell.taskTableViewCell)
         colorCell(color: milestone[indexPath.row].color ?? "purple", cell: cell)
         cell.selectionStyle = .none
-
-
+        
+        
         //mengatur spacing antar cell serta radius corner cell
         let maskLayer = CAShapeLayer()
         maskLayer.cornerRadius = 13
@@ -150,18 +146,19 @@ extension DashboardViewController: UITableViewDataSource{
         
         return cell
     }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 240
     }
-
+    
+    
+    
 }
 
 extension DashboardViewController: UITableViewDelegate{
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let destination = TaskViewController(nibName: "TaskViewController", bundle: nil)
-
+        
         if let indexPath = dashboardTableView.indexPathForSelectedRow {
             destination.selectedMilestone = milestone[indexPath.row]
             destination.selectedProject = currentProject[indexPath.row]
@@ -170,23 +167,21 @@ extension DashboardViewController: UITableViewDelegate{
             destination.deadlineMilestone = milestone[indexPath.row].deadline
             destination.milestoneColor = milestone[indexPath.row].color
             destination.milestone = milestone
-//            destination.delegate = self
+            //            destination.delegate = self
             destination.nameProject = currentProject[indexPath.row].projectName
             destination.clientName = currentProject[indexPath.row].clientName
             destination.deadlineProject = formatDate(input: currentProject[indexPath.row].deadline!)
             destination.isCompleted = milestone[indexPath.row].isCompleted
-
+            
         }
-
+        
         self.navigationController?.pushViewController(destination, animated: true)
-
-//    }
-
-
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 91
+        
+        
+        //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        //        return 91
     }
-
+    
 }
 
 extension String {
@@ -194,8 +189,8 @@ extension String {
         let attributeString =  NSMutableAttributedString(string: self)
         attributeString.addAttribute(
             NSAttributedString.Key.strikethroughStyle,
-               value: NSUnderlineStyle.single.rawValue,
-                   range:NSMakeRange(0,attributeString.length))
+            value: NSUnderlineStyle.single.rawValue,
+            range:NSMakeRange(0,attributeString.length))
         return attributeString
     }
     

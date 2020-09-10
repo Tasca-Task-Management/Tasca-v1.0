@@ -68,28 +68,26 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- task 1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvi-i5-RKT">
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4iH-5Q-4Ao">
                         <rect key="frame" x="26" y="116" width="247" height="103"/>
-                        <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="20"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </tableView>
                 </subviews>
                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="OlK-cW-riD" firstAttribute="top" secondItem="Ntp-RT-ftW" secondAttribute="bottom" constant="24" id="9Ln-y2-2Sw"/>
                     <constraint firstItem="GbZ-Zx-LjK" firstAttribute="leading" secondItem="ndA-UQ-H3B" secondAttribute="leading" id="CaL-9o-8po"/>
                     <constraint firstItem="OlK-cW-riD" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Eet-PY-c4G"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Wvi-i5-RKT" secondAttribute="trailing" constant="10" id="F7k-OD-K1V"/>
                     <constraint firstItem="ndA-UQ-H3B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Ggw-D4-yoC"/>
                     <constraint firstItem="ndA-UQ-H3B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="27" id="HNl-Cz-y2g"/>
-                    <constraint firstItem="Wvi-i5-RKT" firstAttribute="top" secondItem="Ntp-RT-ftW" secondAttribute="bottom" constant="10" id="MDm-0G-R2f"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4iH-5Q-4Ao" secondAttribute="trailing" constant="10" id="HqL-4R-51d"/>
                     <constraint firstItem="Ntp-RT-ftW" firstAttribute="top" secondItem="ccB-iZ-7xy" secondAttribute="bottom" constant="9" id="MxR-MB-6Es"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="Wvi-i5-RKT" secondAttribute="bottom" constant="10" id="Tql-fo-git"/>
+                    <constraint firstItem="4iH-5Q-4Ao" firstAttribute="top" secondItem="Ntp-RT-ftW" secondAttribute="bottom" constant="10" id="ThO-wa-n21"/>
                     <constraint firstAttribute="trailing" secondItem="ccB-iZ-7xy" secondAttribute="trailing" constant="27" id="Tzs-ZB-0A1"/>
-                    <constraint firstItem="Wvi-i5-RKT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="XWQ-ET-qHm"/>
+                    <constraint firstItem="4iH-5Q-4Ao" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="dDm-h9-EcW"/>
                     <constraint firstItem="Ntp-RT-ftW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="105" id="fdb-8f-XNu"/>
                     <constraint firstItem="7Mn-Fp-TXR" firstAttribute="top" secondItem="GbZ-Zx-LjK" secondAttribute="bottom" id="mfp-j5-XED"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4iH-5Q-4Ao" secondAttribute="bottom" constant="10" id="mru-Ch-doT"/>
                     <constraint firstItem="7Mn-Fp-TXR" firstAttribute="leading" secondItem="GbZ-Zx-LjK" secondAttribute="leading" id="rXy-Zr-mQb"/>
                     <constraint firstItem="GbZ-Zx-LjK" firstAttribute="top" secondItem="ndA-UQ-H3B" secondAttribute="bottom" constant="5" id="rqg-GI-Urn"/>
                     <constraint firstItem="Ntp-RT-ftW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wOF-BP-pRi"/>
@@ -101,10 +99,10 @@
                 <outlet property="clientNameLabel" destination="7Mn-Fp-TXR" id="ocb-0O-htQ"/>
                 <outlet property="dashboardTaskView" destination="H2p-sc-9uM" id="VdF-s5-IKy"/>
                 <outlet property="deadlineLabel" destination="ccB-iZ-7xy" id="UCt-8K-2S1"/>
-                <outlet property="label" destination="Wvi-i5-RKT" id="B4s-rm-ZDB"/>
                 <outlet property="milestoneLabel" destination="ndA-UQ-H3B" id="j4q-6L-qXc"/>
                 <outlet property="noTaskLabel" destination="OlK-cW-riD" id="TsP-0e-bFb"/>
                 <outlet property="projectNameLabel" destination="GbZ-Zx-LjK" id="6Xd-0d-BtH"/>
+                <outlet property="taskTableViewCell" destination="4iH-5Q-4Ao" id="LLN-T4-Jbh"/>
             </connections>
             <point key="canvasLocation" x="128.2608695652174" y="103.79464285714285"/>
         </tableViewCell>

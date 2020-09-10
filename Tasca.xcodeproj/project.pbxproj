@@ -37,6 +37,8 @@
 		E100989E2475103800E693A0 /* UITableViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100989D2475103800E693A0 /* UITableViewController+Extension.swift */; };
 		E10098A02475DCC100E693A0 /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100989F2475DCC100E693A0 /* protocol.swift */; };
 		E161C15B24814BBD00CE9082 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E161C15A24814BBD00CE9082 /* CloudKit.framework */; };
+		E1EDD54B250ABDD2005ADF36 /* DashboardTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EDD549250ABDD2005ADF36 /* DashboardTaskTableViewCell.swift */; };
+		E1EDD54C250ABDD2005ADF36 /* DashboardTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1EDD54A250ABDD2005ADF36 /* DashboardTaskTableViewCell.xib */; };
 		E1F9A9F8247DA5F300C0308C /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9A9F7247DA5F300C0308C /* Notification.swift */; };
 		EC00375D247AC50D00A3C73D /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC00375B247AC50D00A3C73D /* DashboardTableViewCell.swift */; };
 		EC00375E247AC50D00A3C73D /* DashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC00375C247AC50D00A3C73D /* DashboardTableViewCell.xib */; };
@@ -88,6 +90,8 @@
 		E100989F2475DCC100E693A0 /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
 		E161C15824814B9A00CE9082 /* Tasca.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tasca.entitlements; sourceTree = "<group>"; };
 		E161C15A24814BBD00CE9082 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		E1EDD549250ABDD2005ADF36 /* DashboardTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTaskTableViewCell.swift; sourceTree = "<group>"; };
+		E1EDD54A250ABDD2005ADF36 /* DashboardTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTaskTableViewCell.xib; sourceTree = "<group>"; };
 		E1F9A9F4247AD40000C0308C /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		E1F9A9F5247AD57F00C0308C /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		E1F9A9F6247ADEE500C0308C /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				E10098492471360000E693A0 /* MilestoneTableViewCell.xib */,
 				E100985E24729B4100E693A0 /* TaskTableViewCell.xib */,
 				EC1B1539247E223C0092A005 /* RewardCollectionViewCell.xib */,
+				E1EDD54A250ABDD2005ADF36 /* DashboardTaskTableViewCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 		E10098962473D18E00E693A0 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				E1EDD549250ABDD2005ADF36 /* DashboardTaskTableViewCell.swift */,
 				E100983F24712A0100E693A0 /* ProjectTableViewCell.swift */,
 				E10098482471360000E693A0 /* MilestoneTableViewCell.swift */,
 				E100985D24729B4100E693A0 /* TaskTableViewCell.swift */,
@@ -320,6 +326,7 @@
 				EC67E1772479687E0092B8C5 /* SF-Pro-Rounded-Bold.otf in Resources */,
 				EC67E178247968950092B8C5 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				EC00375E247AC50D00A3C73D /* DashboardTableViewCell.xib in Resources */,
+				E1EDD54C250ABDD2005ADF36 /* DashboardTaskTableViewCell.xib in Resources */,
 				E10098912473CFB800E693A0 /* TaskViewController.xib in Resources */,
 				EC1B152D247D3BF60092A005 /* CompleteViewController.xib in Resources */,
 				E10098892473CB6400E693A0 /* MilestoneViewController.xib in Resources */,
@@ -340,6 +347,7 @@
 				ECFD50092477D9AA00407C0A /* DashboardViewController.swift in Sources */,
 				E100984524712CFB00E693A0 /* UIViewController+Extension.swift in Sources */,
 				E100984124712A0100E693A0 /* ProjectTableViewCell.swift in Sources */,
+				E1EDD54B250ABDD2005ADF36 /* DashboardTaskTableViewCell.swift in Sources */,
 				EC1B153D247E24CD0092A005 /* Rewards.swift in Sources */,
 				E100984A2471360000E693A0 /* MilestoneTableViewCell.swift in Sources */,
 				EC1B153A247E223C0092A005 /* RewardCollectionViewCell.swift in Sources */,
