@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7419AA87247CEFF600E2C184 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419AA85247CEFF600E2C184 /* WelcomeViewController.swift */; };
+		7419AA88247CEFF600E2C184 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7419AA86247CEFF600E2C184 /* WelcomeViewController.xib */; };
+		E1009829247126D600E693A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1009828247126D600E693A0 /* AppDelegate.swift */; };
+		E100982B247126D600E693A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100982A247126D600E693A0 /* SceneDelegate.swift */; };
+		E100982D247126D600E693A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100982C247126D600E693A0 /* ViewController.swift */; };
+		E1009830247126D600E693A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E100982E247126D600E693A0 /* Main.storyboard */; };
+		E1009833247126D600E693A0 /* mc2apps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1009831247126D600E693A0 /* mc2apps.xcdatamodeld */; };
+		E1009835247126D700E693A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1009834247126D700E693A0 /* Assets.xcassets */; };
+		E1009838247126D700E693A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1009836247126D700E693A0 /* LaunchScreen.storyboard */; };
+		E100984124712A0100E693A0 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100983F24712A0100E693A0 /* ProjectTableViewCell.swift */; };
+		E100984224712A0100E693A0 /* ProjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E100984024712A0100E693A0 /* ProjectTableViewCell.xib */; };
+		E100984524712CFB00E693A0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100984424712CFB00E693A0 /* UIViewController+Extension.swift */; };
+		E100984724712D4F00E693A0 /* Project+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100984624712D4F00E693A0 /* Project+Extension.swift */; };
+		E100984A2471360000E693A0 /* MilestoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10098482471360000E693A0 /* MilestoneTableViewCell.swift */; };
+		E100984B2471360000E693A0 /* MilestoneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10098492471360000E693A0 /* MilestoneTableViewCell.xib */; };
+		E10098512471389700E693A0 /* MilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10098502471389700E693A0 /* MilestoneViewController.swift */; };
+		E10098542471B31A00E693A0 /* Milestone+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10098532471B31A00E693A0 /* Milestone+Extension.swift */; };
+		E10098562471B90100E693A0 /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10098552471B90100E693A0 /* AddProjectViewController.swift */; };
+		E100985A2472809F00E693A0 /* AddMilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10098592472809F00E693A0 /* AddMilestoneViewController.swift */; };
+		E100985C24729B1400E693A0 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100985B24729B1400E693A0 /* TaskViewController.swift */; };
+		E100985F24729B4100E693A0 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100985D24729B4100E693A0 /* TaskTableViewCell.swift */; };
+		E100986024729B4100E693A0 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E100985E24729B4100E693A0 /* TaskTableViewCell.xib */; };
+		E10098622472DA1F00E693A0 /* Task+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10098612472DA1F00E693A0 /* Task+Extension.swift */; };
+		E10098892473CB6400E693A0 /* MilestoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10098872473CB6400E693A0 /* MilestoneViewController.xib */; };
+		E100988D2473CF4000E693A0 /* AddMilestoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E100988B2473CF4000E693A0 /* AddMilestoneViewController.xib */; };
+		E10098912473CFB800E693A0 /* TaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E100988F2473CFB800E693A0 /* TaskViewController.xib */; };
+		E10098952473D09200E693A0 /* AddProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10098932473D09200E693A0 /* AddProjectViewController.xib */; };
+		E100989E2475103800E693A0 /* UITableViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100989D2475103800E693A0 /* UITableViewController+Extension.swift */; };
+		E10098A02475DCC100E693A0 /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100989F2475DCC100E693A0 /* protocol.swift */; };
+		E161C15B24814BBD00CE9082 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E161C15A24814BBD00CE9082 /* CloudKit.framework */; };
+		E1F9A9F8247DA5F300C0308C /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9A9F7247DA5F300C0308C /* Notification.swift */; };
+		EC00375D247AC50D00A3C73D /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC00375B247AC50D00A3C73D /* DashboardTableViewCell.swift */; };
+		EC00375E247AC50D00A3C73D /* DashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC00375C247AC50D00A3C73D /* DashboardTableViewCell.xib */; };
+		EC1B152C247D3BF60092A005 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1B152A247D3BF60092A005 /* CompleteViewController.swift */; };
+		EC1B152D247D3BF60092A005 /* CompleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1B152B247D3BF60092A005 /* CompleteViewController.xib */; };
+		EC1B1534247D72480092A005 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1B1532247D72480092A005 /* RewardViewController.swift */; };
+		EC1B1535247D72480092A005 /* RewardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1B1533247D72480092A005 /* RewardViewController.xib */; };
+		EC1B153A247E223C0092A005 /* RewardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1B1538247E223C0092A005 /* RewardCollectionViewCell.swift */; };
+		EC1B153B247E223C0092A005 /* RewardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1B1539247E223C0092A005 /* RewardCollectionViewCell.xib */; };
+		EC1B153D247E24CD0092A005 /* Rewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1B153C247E24CD0092A005 /* Rewards.swift */; };
+		EC67E1772479687E0092B8C5 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC67E173247963A00092B8C5 /* SF-Pro-Rounded-Bold.otf */; };
+		EC67E178247968950092B8C5 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC67E1752479656A0092B8C5 /* SF-Pro-Rounded-Semibold.otf */; };
+		EC67E179247968980092B8C5 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC67E1742479656A0092B8C5 /* SF-Pro-Rounded-Medium.otf */; };
+		EC67E17A2479689B0092B8C5 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC67E1762479656A0092B8C5 /* SF-Pro-Rounded-Regular.otf */; };
+		ECFD50092477D9AA00407C0A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD50072477D9AA00407C0A /* DashboardViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7419AA85247CEFF600E2C184 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		7419AA86247CEFF600E2C184 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		E1009825247126D600E693A0 /* Tasca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1009828247126D600E693A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E100982A247126D600E693A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E100982C247126D600E693A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E100982F247126D600E693A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1009832247126D600E693A0 /* mc2apps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mc2apps.xcdatamodel; sourceTree = "<group>"; };
+		E1009834247126D700E693A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1009837247126D700E693A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1009839247126D700E693A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E100983F24712A0100E693A0 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		E100984024712A0100E693A0 /* ProjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectTableViewCell.xib; sourceTree = "<group>"; };
+		E100984424712CFB00E693A0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E100984624712D4F00E693A0 /* Project+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+Extension.swift"; sourceTree = "<group>"; };
+		E10098482471360000E693A0 /* MilestoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneTableViewCell.swift; sourceTree = "<group>"; };
+		E10098492471360000E693A0 /* MilestoneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MilestoneTableViewCell.xib; sourceTree = "<group>"; };
+		E10098502471389700E693A0 /* MilestoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneViewController.swift; sourceTree = "<group>"; };
+		E10098532471B31A00E693A0 /* Milestone+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Milestone+Extension.swift"; sourceTree = "<group>"; };
+		E10098552471B90100E693A0 /* AddProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewController.swift; sourceTree = "<group>"; };
+		E10098592472809F00E693A0 /* AddMilestoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMilestoneViewController.swift; sourceTree = "<group>"; };
+		E100985B24729B1400E693A0 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		E100985D24729B4100E693A0 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		E100985E24729B4100E693A0 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		E10098612472DA1F00E693A0 /* Task+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Extension.swift"; sourceTree = "<group>"; };
+		E10098872473CB6400E693A0 /* MilestoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MilestoneViewController.xib; sourceTree = "<group>"; };
+		E100988B2473CF4000E693A0 /* AddMilestoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMilestoneViewController.xib; sourceTree = "<group>"; };
+		E100988F2473CFB800E693A0 /* TaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskViewController.xib; sourceTree = "<group>"; };
+		E10098932473D09200E693A0 /* AddProjectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProjectViewController.xib; sourceTree = "<group>"; };
+		E100989D2475103800E693A0 /* UITableViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Extension.swift"; sourceTree = "<group>"; };
+		E100989F2475DCC100E693A0 /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
+		E161C15824814B9A00CE9082 /* Tasca.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tasca.entitlements; sourceTree = "<group>"; };
+		E161C15A24814BBD00CE9082 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		E1F9A9F4247AD40000C0308C /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		E1F9A9F5247AD57F00C0308C /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		E1F9A9F6247ADEE500C0308C /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		E1F9A9F7247DA5F300C0308C /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		EC00375B247AC50D00A3C73D /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		EC00375C247AC50D00A3C73D /* DashboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTableViewCell.xib; sourceTree = "<group>"; };
+		EC1B152A247D3BF60092A005 /* CompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
+		EC1B152B247D3BF60092A005 /* CompleteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompleteViewController.xib; sourceTree = "<group>"; };
+		EC1B1532247D72480092A005 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		EC1B1533247D72480092A005 /* RewardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardViewController.xib; sourceTree = "<group>"; };
+		EC1B1538247E223C0092A005 /* RewardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC1B1539247E223C0092A005 /* RewardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardCollectionViewCell.xib; sourceTree = "<group>"; };
+		EC1B153C247E24CD0092A005 /* Rewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewards.swift; sourceTree = "<group>"; };
+		EC67E173247963A00092B8C5 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		EC67E1742479656A0092B8C5 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		EC67E1752479656A0092B8C5 /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
+		EC67E1762479656A0092B8C5 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		ECFD50072477D9AA00407C0A /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1009822247126D600E693A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E161C15B24814BBD00CE9082 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E100981C247126D600E693A0 = {
+			isa = PBXGroup;
+			children = (
+				E1009827247126D600E693A0 /* Tasca */,
+				E1009826247126D600E693A0 /* Products */,
+				E161C15924814BBD00CE9082 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1009826247126D600E693A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1009825247126D600E693A0 /* Tasca.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1009827247126D600E693A0 /* Tasca */ = {
+			isa = PBXGroup;
+			children = (
+				E161C15824814B9A00CE9082 /* Tasca.entitlements */,
+				E10098582472579A00E693A0 /* Extension */,
+				E10098572472575F00E693A0 /* Controller */,
+				E100984324712A1600E693A0 /* View */,
+				E1009828247126D600E693A0 /* AppDelegate.swift */,
+				E100982A247126D600E693A0 /* SceneDelegate.swift */,
+				E1009834247126D700E693A0 /* Assets.xcassets */,
+				E1009839247126D700E693A0 /* Info.plist */,
+				E1009831247126D600E693A0 /* mc2apps.xcdatamodeld */,
+				E100989F2475DCC100E693A0 /* protocol.swift */,
+				E1F9A9F7247DA5F300C0308C /* Notification.swift */,
+				EC1B153C247E24CD0092A005 /* Rewards.swift */,
+			);
+			path = Tasca;
+			sourceTree = "<group>";
+		};
+		E100984324712A1600E693A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1009836247126D700E693A0 /* LaunchScreen.storyboard */,
+				E100982E247126D600E693A0 /* Main.storyboard */,
+				7419AA86247CEFF600E2C184 /* WelcomeViewController.xib */,
+				E10098872473CB6400E693A0 /* MilestoneViewController.xib */,
+				E100988B2473CF4000E693A0 /* AddMilestoneViewController.xib */,
+				E100988F2473CFB800E693A0 /* TaskViewController.xib */,
+				E10098932473D09200E693A0 /* AddProjectViewController.xib */,
+				EC1B152B247D3BF60092A005 /* CompleteViewController.xib */,
+				EC1B1533247D72480092A005 /* RewardViewController.xib */,
+				E10098522471B2DA00E693A0 /* cell */,
+				EC67E1612479631E0092B8C5 /* fonts */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E10098522471B2DA00E693A0 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E100984024712A0100E693A0 /* ProjectTableViewCell.xib */,
+				EC00375C247AC50D00A3C73D /* DashboardTableViewCell.xib */,
+				E10098492471360000E693A0 /* MilestoneTableViewCell.xib */,
+				E100985E24729B4100E693A0 /* TaskTableViewCell.xib */,
+				EC1B1539247E223C0092A005 /* RewardCollectionViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E10098572472575F00E693A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E10098552471B90100E693A0 /* AddProjectViewController.swift */,
+				E10098502471389700E693A0 /* MilestoneViewController.swift */,
+				E100982C247126D600E693A0 /* ViewController.swift */,
+				7419AA85247CEFF600E2C184 /* WelcomeViewController.swift */,
+				ECFD50072477D9AA00407C0A /* DashboardViewController.swift */,
+				E10098592472809F00E693A0 /* AddMilestoneViewController.swift */,
+				E100985B24729B1400E693A0 /* TaskViewController.swift */,
+				EC1B152A247D3BF60092A005 /* CompleteViewController.swift */,
+				EC1B1532247D72480092A005 /* RewardViewController.swift */,
+				E10098962473D18E00E693A0 /* cell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E10098582472579A00E693A0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E100989D2475103800E693A0 /* UITableViewController+Extension.swift */,
+				E100984424712CFB00E693A0 /* UIViewController+Extension.swift */,
+				E100984624712D4F00E693A0 /* Project+Extension.swift */,
+				E10098532471B31A00E693A0 /* Milestone+Extension.swift */,
+				E10098612472DA1F00E693A0 /* Task+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E10098962473D18E00E693A0 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E100983F24712A0100E693A0 /* ProjectTableViewCell.swift */,
+				E10098482471360000E693A0 /* MilestoneTableViewCell.swift */,
+				E100985D24729B4100E693A0 /* TaskTableViewCell.swift */,
+				EC00375B247AC50D00A3C73D /* DashboardTableViewCell.swift */,
+				EC1B1538247E223C0092A005 /* RewardCollectionViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E161C15924814BBD00CE9082 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E161C15A24814BBD00CE9082 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC67E1612479631E0092B8C5 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E1F9A9F6247ADEE500C0308C /* SFProText-Regular.ttf */,
+				E1F9A9F5247AD57F00C0308C /* SFProDisplay-Bold.ttf */,
+				E1F9A9F4247AD40000C0308C /* SFProDisplay-Regular.ttf */,
+				EC67E173247963A00092B8C5 /* SF-Pro-Rounded-Bold.otf */,
+				EC67E1752479656A0092B8C5 /* SF-Pro-Rounded-Semibold.otf */,
+				EC67E1742479656A0092B8C5 /* SF-Pro-Rounded-Medium.otf */,
+				EC67E1762479656A0092B8C5 /* SF-Pro-Rounded-Regular.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1009824247126D600E693A0 /* Tasca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E100983C247126D700E693A0 /* Build configuration list for PBXNativeTarget "Tasca" */;
+			buildPhases = (
+				E1009821247126D600E693A0 /* Sources */,
+				E1009822247126D600E693A0 /* Frameworks */,
+				E1009823247126D600E693A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tasca;
+			productName = mc2apps;
+			productReference = E1009825247126D600E693A0 /* Tasca.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E100981D247126D600E693A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "danny santoso";
+				TargetAttributes = {
+					E1009824247126D600E693A0 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = E1009820247126D600E693A0 /* Build configuration list for PBXProject "Tasca" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E100981C247126D600E693A0;
+			productRefGroup = E1009826247126D600E693A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1009824247126D600E693A0 /* Tasca */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1009823247126D600E693A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E100986024729B4100E693A0 /* TaskTableViewCell.xib in Resources */,
+				EC67E17A2479689B0092B8C5 /* SF-Pro-Rounded-Regular.otf in Resources */,
+				E1009838247126D700E693A0 /* LaunchScreen.storyboard in Resources */,
+				EC1B153B247E223C0092A005 /* RewardCollectionViewCell.xib in Resources */,
+				E1009835247126D700E693A0 /* Assets.xcassets in Resources */,
+				EC67E179247968980092B8C5 /* SF-Pro-Rounded-Medium.otf in Resources */,
+				7419AA88247CEFF600E2C184 /* WelcomeViewController.xib in Resources */,
+				E1009830247126D600E693A0 /* Main.storyboard in Resources */,
+				E100984224712A0100E693A0 /* ProjectTableViewCell.xib in Resources */,
+				E100984B2471360000E693A0 /* MilestoneTableViewCell.xib in Resources */,
+				EC67E1772479687E0092B8C5 /* SF-Pro-Rounded-Bold.otf in Resources */,
+				EC67E178247968950092B8C5 /* SF-Pro-Rounded-Semibold.otf in Resources */,
+				EC00375E247AC50D00A3C73D /* DashboardTableViewCell.xib in Resources */,
+				E10098912473CFB800E693A0 /* TaskViewController.xib in Resources */,
+				EC1B152D247D3BF60092A005 /* CompleteViewController.xib in Resources */,
+				E10098892473CB6400E693A0 /* MilestoneViewController.xib in Resources */,
+				E10098952473D09200E693A0 /* AddProjectViewController.xib in Resources */,
+				E100988D2473CF4000E693A0 /* AddMilestoneViewController.xib in Resources */,
+				EC1B1535247D72480092A005 /* RewardViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1009821247126D600E693A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E100985F24729B4100E693A0 /* TaskTableViewCell.swift in Sources */,
+				ECFD50092477D9AA00407C0A /* DashboardViewController.swift in Sources */,
+				E100984524712CFB00E693A0 /* UIViewController+Extension.swift in Sources */,
+				E100984124712A0100E693A0 /* ProjectTableViewCell.swift in Sources */,
+				EC1B153D247E24CD0092A005 /* Rewards.swift in Sources */,
+				E100984A2471360000E693A0 /* MilestoneTableViewCell.swift in Sources */,
+				EC1B153A247E223C0092A005 /* RewardCollectionViewCell.swift in Sources */,
+				E10098622472DA1F00E693A0 /* Task+Extension.swift in Sources */,
+				E10098562471B90100E693A0 /* AddProjectViewController.swift in Sources */,
+				E10098512471389700E693A0 /* MilestoneViewController.swift in Sources */,
+				EC1B152C247D3BF60092A005 /* CompleteViewController.swift in Sources */,
+				E100982D247126D600E693A0 /* ViewController.swift in Sources */,
+				EC00375D247AC50D00A3C73D /* DashboardTableViewCell.swift in Sources */,
+				EC1B1534247D72480092A005 /* RewardViewController.swift in Sources */,
+				E10098A02475DCC100E693A0 /* protocol.swift in Sources */,
+				E100985A2472809F00E693A0 /* AddMilestoneViewController.swift in Sources */,
+				E1009829247126D600E693A0 /* AppDelegate.swift in Sources */,
+				E10098542471B31A00E693A0 /* Milestone+Extension.swift in Sources */,
+				E100984724712D4F00E693A0 /* Project+Extension.swift in Sources */,
+				E1009833247126D600E693A0 /* mc2apps.xcdatamodeld in Sources */,
+				E1F9A9F8247DA5F300C0308C /* Notification.swift in Sources */,
+				E100989E2475103800E693A0 /* UITableViewController+Extension.swift in Sources */,
+				E100985C24729B1400E693A0 /* TaskViewController.swift in Sources */,
+				E100982B247126D600E693A0 /* SceneDelegate.swift in Sources */,
+				7419AA87247CEFF600E2C184 /* WelcomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E100982E247126D600E693A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E100982F247126D600E693A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1009836247126D700E693A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1009837247126D700E693A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E100983A247126D700E693A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E100983B247126D700E693A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E100983D247126D700E693A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tasca/Tasca.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 9P78Q47KY2;
+				INFOPLIST_FILE = Tasca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dannysantoso.tasca;
+				PRODUCT_NAME = Tasca;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E100983E247126D700E693A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tasca/Tasca.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 9P78Q47KY2;
+				INFOPLIST_FILE = Tasca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dannysantoso.tasca;
+				PRODUCT_NAME = Tasca;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1009820247126D600E693A0 /* Build configuration list for PBXProject "Tasca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E100983A247126D700E693A0 /* Debug */,
+				E100983B247126D700E693A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E100983C247126D700E693A0 /* Build configuration list for PBXNativeTarget "Tasca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E100983D247126D700E693A0 /* Debug */,
+				E100983E247126D700E693A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1009831247126D600E693A0 /* mc2apps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1009832247126D600E693A0 /* mc2apps.xcdatamodel */,
+			);
+			currentVersion = E1009832247126D600E693A0 /* mc2apps.xcdatamodel */;
+			path = mc2apps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E100981D247126D600E693A0 /* Project object */;
+}
