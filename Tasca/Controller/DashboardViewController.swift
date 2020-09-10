@@ -133,6 +133,8 @@ extension DashboardViewController: UITableViewDataSource{
                     cell.label.text = text
                 }
             }
+        }else{
+            cell.label.isHidden = true
         }
           
         colorCell(color: milestone[indexPath.row].color ?? "purple", cell: cell)
