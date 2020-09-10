@@ -57,7 +57,7 @@ extension Project{
     static func fetchProject(viewContext: NSManagedObjectContext, selectedMilestone: String, predicate: NSPredicate? = nil) -> [Project]{
         let request: NSFetchRequest<Project> = Project.fetchRequest()
         
-        let projectpredicate = NSPredicate(format: "ANY milestone.milestoneName = %@", selectedMilestone)
+        let projectpredicate = NSPredicate(format: "ANY milestone.milestoneId = %@", selectedMilestone)
         
         
         if let addtionalPredicate = predicate {
@@ -76,6 +76,7 @@ extension Project{
     
     static func save(viewContext: NSManagedObjectContext, projectName: String, clientName: String, deadline: Date, color: String, isCompleted: Bool, projectCompletionReward: String) -> Project? {
         let project = Project(context: viewContext)
+        project.projectId = UUID().uuidString
         project.projectName = projectName
         project.clientName = clientName
         project.deadline = deadline

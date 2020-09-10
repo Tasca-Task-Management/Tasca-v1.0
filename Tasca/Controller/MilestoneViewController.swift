@@ -90,7 +90,7 @@ class MilestoneViewController: UIViewController, BackHandler, ReceiveData {
             tapGestureMilestone.isEnabled = false
         }
         
-        milestone = Milestone.fetchQuery(viewContext: getViewContext(), selectedProject: (selectedProject?.projectName)!)
+        milestone = Milestone.fetchQuery(viewContext: getViewContext(), selectedProject: (selectedProject?.projectId)!)
         milestoneTableView.reloadData()
         
         nameProjectLabel.text = nameProject
@@ -135,7 +135,7 @@ class MilestoneViewController: UIViewController, BackHandler, ReceiveData {
     
     
     func onBackHome() {
-        milestone = Milestone.fetchQuery(viewContext: getViewContext(), selectedProject: (selectedProject?.projectName)!)
+        milestone = Milestone.fetchQuery(viewContext: getViewContext(), selectedProject: (selectedProject?.projectId)!)
         
         if milestone.count == 0 {
             milestoneTableView.isHidden = true
@@ -231,7 +231,7 @@ class MilestoneViewController: UIViewController, BackHandler, ReceiveData {
     func checkMilestone()-> Bool{
         var value = false
         
-        milestoneCheck = Milestone.fetchQuery(viewContext: getViewContext(), selectedProject: (selectedProject?.projectName)!)
+        milestoneCheck = Milestone.fetchQuery(viewContext: getViewContext(), selectedProject: (selectedProject?.projectId)!)
         
         var complete = 0
         for item in milestoneCheck {

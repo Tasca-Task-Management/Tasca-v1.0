@@ -96,7 +96,7 @@ class TaskViewController: UIViewController, BackHandler, ReceiveData {
 
         colorHeader(color: milestoneColor ?? "purple")
         
-        task = Task.fetchQuery(viewContext: getViewContext(), selectedMilestone: (selectedMilestone?.milestoneName)!, selectedProject: (selectedProject?.projectName)!)
+        task = Task.fetchQuery(viewContext: getViewContext(), selectedMilestone: (selectedMilestone?.milestoneId)!, selectedProject: (selectedProject?.projectId)!)
         
         taskTableView.dataSource = self
         taskTableView.delegate = self
@@ -194,7 +194,7 @@ class TaskViewController: UIViewController, BackHandler, ReceiveData {
     func checkTask()-> Bool{
         var value = false
         
-        taskCheck = Task.fetchQuery(viewContext: getViewContext(), selectedMilestone: (selectedMilestone?.milestoneName)!, selectedProject: (selectedProject?.projectName)!)
+        taskCheck = Task.fetchQuery(viewContext: getViewContext(), selectedMilestone: (selectedMilestone?.milestoneId)!, selectedProject: (selectedProject?.projectId)!)
         
         var complete = 0
         for item in taskCheck {

@@ -14,7 +14,7 @@ extension Task{
     static func fetchQuery(viewContext: NSManagedObjectContext, selectedMilestone: String, predicate: NSPredicate? = nil, selectedProject: String) -> [Task]{
         let request: NSFetchRequest<Task> = Task.fetchRequest()
         
-        let milestonepredicate = NSPredicate(format: "milestoneOf.milestoneName MATCHES %@ && milestoneOf.projectOf.projectName MATCHES %@", selectedMilestone, selectedProject)
+        let milestonepredicate = NSPredicate(format: "milestoneOf.milestoneId MATCHES %@ && milestoneOf.projectOf.projectId MATCHES %@", selectedMilestone, selectedProject)
         
         
         if let addtionalPredicate = predicate {
@@ -33,7 +33,7 @@ extension Task{
     static func fetchTask(viewContext: NSManagedObjectContext, selectedMilestone: String, predicate: NSPredicate? = nil) -> [Task]{
         let request: NSFetchRequest<Task> = Task.fetchRequest()
         
-        let taskpredicate = NSPredicate(format: "milestoneOf.milestoneName MATCHES %@", selectedMilestone)
+        let taskpredicate = NSPredicate(format: "milestoneOf.milestoneId MATCHES %@", selectedMilestone)
         
         
         if let addtionalPredicate = predicate {
@@ -52,6 +52,7 @@ extension Task{
     
     static func save(viewContext: NSManagedObjectContext, taskName: String, selectedMilestone: Milestone, isChecklist: Bool) -> Task? {
         let newTask = Task(context: viewContext)
+        newTask.taskId = UUID().uuidString
         newTask.taskName = taskName
         newTask.isChecklist = isChecklist
         newTask.milestoneOf = selectedMilestone

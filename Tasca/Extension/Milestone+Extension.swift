@@ -14,7 +14,7 @@ extension Milestone{
     static func fetchQuery(viewContext: NSManagedObjectContext, selectedProject: String, predicate: NSPredicate? = nil) -> [Milestone]{
         let request: NSFetchRequest<Milestone> = Milestone.fetchRequest()
         
-        let projectpredicate = NSPredicate(format: "projectOf.projectName MATCHES %@", selectedProject)
+        let projectpredicate = NSPredicate(format: "projectOf.projectId MATCHES %@", selectedProject)
         
         
         if let addtionalPredicate = predicate {
@@ -75,6 +75,7 @@ extension Milestone{
     
     static func save(viewContext: NSManagedObjectContext, milestoneName: String, selectedProject: Project, deadline: Date, color: String, isCompleted: Bool) -> Milestone? {
         let newMilestone = Milestone(context: viewContext)
+        newMilestone.milestoneId = UUID().uuidString
         newMilestone.milestoneName = milestoneName
         newMilestone.deadline = deadline
         newMilestone.isCompleted = isCompleted
