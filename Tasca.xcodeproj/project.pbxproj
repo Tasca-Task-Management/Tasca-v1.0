@@ -521,6 +521,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dannysantoso.tasca;
 				PRODUCT_NAME = Tasca;
 				SWIFT_VERSION = 5.0;
@@ -541,6 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dannysantoso.tasca;
 				PRODUCT_NAME = Tasca;
 				SWIFT_VERSION = 5.0;
